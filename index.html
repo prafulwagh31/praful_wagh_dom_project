@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!----------Header part------------>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register student details, and manage student records easily.</p>
+    </header>    
+
+    <!----------Section part------------>   
+    <section>
+        <form id="studentForm">
+            <label for="name">Student Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="studentId">Student ID:</label>
+            <input type="number" id="studentId" name="studentId" required>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="contact">Contact No:</label>
+            <input type="number" id="contact" name="contact" required>
+
+            <div class="text-center">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+    
+    <!----------Student List------------>
+    <section>
+        <h2>Registered Student List</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Registered students will be displayed here -->
+            </tbody>
+        </table>
+    </section>    
+
+    <!----------Footer part------------>
+    <footer>
+        <p>Copyright 2024 &#169; Student Registration System</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
